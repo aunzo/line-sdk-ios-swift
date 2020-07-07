@@ -11,14 +11,12 @@ let package = Package(
     targets: [
         .target(
             name: "LineSDK",
-            path: "LineSDK/LineSDK",
-            exclude: ["LineSDKUI"]
+            path: "LineSDK/LineSDK"
         ),
         .target(
             name: "LineSDKObjC",
             dependencies: ["LineSDK"],
-            path: "LineSDK/LineSDKObjC",
-            exclude: ["LineSDKUI"]
+            path: "LineSDK/LineSDKObjC"
         )
     ]
 )
